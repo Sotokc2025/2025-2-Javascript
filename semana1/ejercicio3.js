@@ -35,6 +35,11 @@ main();
 }
   main();
 
+  const multiplo de ambos = number % 3 === 0 && number % 5 === 0;
+  const multiplo de 3 = number % 3 === 0;   
+  const multiplo de 5 = number % 5 === 0;
+  
+
 
 
 
