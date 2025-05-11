@@ -11,22 +11,22 @@ const { ask } = require('../helpers/input');
 
 function obtenerMayor(num1, num2) {
   if (num1 > num2) {
-    return "Numero 1 es mayor" + num1;
+    return " Numero 1 es mayor" +  num1;
   } else {
-    return "Numero 2 es mayor" + num2;
+    return " Numero 2 es mayor" +  num2;
   }
 }
 
 async function main() {
-  const num1 = Number(await ask("Ingresa el primer número"));
-  const num2 = Number(await ask("Ingresa el segundo número"));
+  const num1 = Number(await ask("Ingresa el primer número: "));
+  const num2 = Number(await ask("Ingresa el segundo número: "));
+
   if (num1 === num2) {
-    console.log("Lo siento, los números que introduciste son iguales, no es posible evaluarlos");
+    console.log("Los números que introduciste son iguales, no es posible determinar un mayor.");
   } else {
     const resultado = obtenerMayor(num1, num2);
-    console.log(resultado);
+    console.log(`El número mayor es: ${resultado}`);
   }
-
 }
 
 main();

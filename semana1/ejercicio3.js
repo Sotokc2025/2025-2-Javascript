@@ -13,6 +13,7 @@ async function main() {
   } else {
     console.log("Es múltiplo de 3 y 5");
   }
+  main();
 
   switch (true) {
     case number % 3 === 0 && number % 5 === 0:

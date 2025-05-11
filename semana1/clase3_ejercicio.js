@@ -13,10 +13,11 @@ async function main() {
 
 
   if (dia >= 1 && dia <= 7) {
-    console.log(diasSemana[dia - 1]);
+    console.log(diasSemana[dia]-1);
   } else {
     console.log("No es un número válido");
   }
+main();
 
   switch (dia) {
     case 1:
