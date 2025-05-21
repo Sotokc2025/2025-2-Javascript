@@ -86,7 +86,8 @@ async function main() {
 
     const alumnos = [];
 
-    let opcion = " ";
+    let opcion = "0";
+    
 
     while (opcion !== '3') {
         opcion = await ask('¿Que deseas hacer?\n1.Ingresa el nombre, edad y calificación del alumno\n2. mostrar la lista de alumnos\n3. salir\n');
@@ -130,7 +131,7 @@ async function main() {
 
 }
 main();
-
+202
 
 
 
