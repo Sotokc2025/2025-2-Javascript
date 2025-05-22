@@ -43,6 +43,7 @@ function nombresConVocal(nombres) {
   const vocales = ["a", "e", "i", "o", "u"];
   const resultado = [];
 
+ 
   for (let i = 0; i < nombres.length; i++) {
     let primeraLetra = nombres[i][0].toLowerCase();
     if (vocales.includes(primeraLetra)) {
@@ -71,3 +72,11 @@ async function main() {
 }
 
 main();
+
+//for (let i = 0; i < nombres.length; i++) {
+//Es un ciclo que recorre todo el arreglo nombres, uno por uno.
+//let primeraLetra = nombres[i][0].toLowerCase();Toma el nombre en la posición i.[0] 
+// obtiene la primera letra de ese nombre.toLowerCase() convierte esa letra a minúscula (por si el nombre empieza con mayúscula).
+//if (vocales.includes(primeraLetra)) { Revisa si la primera letra está dentro del arreglo 
+// vocales (por ejemplo, ["a", "e", "i", "o", "u"]).includes devuelve true si la letra está en el arreglo de vocales.
+//resultado.push(nombres[i]); Si la condición es verdadera, agrega ese nombre al arreglo resultado.

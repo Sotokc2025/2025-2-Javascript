@@ -5,6 +5,7 @@ async function main() {
 
   const personas = [
     {
+<<<<<<< HEAD
       nombre: "Rodrigo",
       edad: 36,
       profesion: "Desarrollador",
@@ -16,26 +17,24 @@ async function main() {
       }
     },
     {
+=======
+>>>>>>> upstream/main
       nombre: "Claudia",
-      edad: 36,
-      profesion: "Desarrollador",
-      hobbies: ["nadar", "futbol", "leer"],
-      birthDate: "1988-08-08",
+      edad: 34,
+      ocupacion: "Desarrollador",
       saludar: function () {
-        console.log(`Hola mi nombre es ${this.nombre} `);
+        console.log(`Hola mi nombre es ${this.nombre}`);
       }
     },
 
     {
-      nombre: "Heriberto",
-      edad: 36,
-      profesion: "Desarrollador",
-      hobbies: ["nadar", "futbol", "leer"],
-      birthDate: "1988-08-08",
+      nombre: "Carlos",
+      edad: 28,
+      ocupacion: "Estudiante",
       saludar: function () {
-        console.log(`Hola mi nombre es ${this.nombre} `);
+        console.log(`Hola mi nombre es ${this.nombre}`);
       }
-    },
+    }
   ];
   personas.saludar[0].saludar();
   personas.saludar[1].saludar();
@@ -45,6 +44,7 @@ async function main() {
   }
 }
 
+<<<<<<< HEAD
 const alumno = {
   nombre: "Yei Yei",
   ocupacion: "Estudiante",
@@ -88,10 +88,35 @@ const alumno2 = {
       console.log("Es mayor de edad");
     } else {
       console.log("No es mayor de edad");
+=======
+  // personas[0].saludar();
+  // personas[1].saludar();
+
+  for (let i = 0; i < personas.length; i++) {
+    personas[i].saludar();
+  }
+
+  const alumno = {
+    nombre: "Yei Yei",
+    edad: 18,
+    ocupacion: "Estudiante",
+    esMayorDeEdad: function () {
+      if (this.edad >= 18) { return true; }
+      else { return false; }
+    },
+    mostrarInfo: function () {
+      console.log(`Hola soy: ${this.nombre}, tengo ${this.edad}, me dedico a ser: ${this.ocupacion} `);
+      if (this.esMayorDeEdad()) {
+        console.log("Y SOY MAYOR DE EDAD");
+      } else {
+        console.log("no puedo votar");
+      }
+>>>>>>> upstream/main
     }
   }
 }
 
+<<<<<<< HEAD
 const alumno3 = {
   nombre: "Cris",
   matricula: "AL089767",
@@ -156,3 +181,12 @@ const persona2 = {
 
 main();
 
+=======
+  alumno.mostrarInfo();
+
+}
+
+
+
+main();
+>>>>>>> upstream/main
