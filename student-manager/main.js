@@ -13,25 +13,9 @@ window.onload = function () {
 
 function addStudent() {
   const name = document.getElementById("nameInput").value.trim();
-  if (name === "" || name === isNaN || name === undefined) {
-    alert("Nombre no válido.");
-    return;
-  }
   const grade = parseFloat(document.getElementById("gradeInput").value);
-  if (grade > 100 || grade < 0 || grade === undefined) {
-    alert("the grade is not valid");
-    return;
-  }
-  let status = "";
-  if (grade >= 70) {
-    status = "Passed";
-  } else {
-    status = "Failed";
-  }
-  //ternary operator
-  // status = grade >= 70 ? "Passed" : "Failed";
 
-  const student = { name, grade, status };
+  const student = { name, grade };
   students.push(student);
 
   saveToLocalStorage();
@@ -45,8 +29,9 @@ function displayStudents() {
 
   for (let i = 0; i < students.length; i++) {
     const li = document.createElement("li");
-    li.innerHTML = 
-    `<p>${students[i].name} - ${students[i].grade}</p>`;
+    li.innerHTML = `
+      <p>${students[i].name} - ${students[i].grade} </p>
+    `;
     list.appendChild(li);
   }
 }
