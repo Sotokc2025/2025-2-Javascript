@@ -24,3 +24,11 @@ function addTask() {
     }
   }
 }
+
+function deleteTask(btn) {
+  btn.closest("li").remove();
+}
+
+function toggleComplete(span) {
+  span.classList.toggle("task-complete");
+}
